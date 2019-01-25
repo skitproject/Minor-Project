@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+	{{block.super}}| create forms
+{% endblock head_title %}
+
+{% block content %}
+
+{{ form.media }}
+    <div class="row form-error">
+        <div class="column" id="content">
+            <form  method="post" action='' enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p  }}
+                <input class="button" type="submit" value="Save">
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
