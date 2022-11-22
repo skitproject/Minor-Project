@@ -59,7 +59,7 @@ pandocfilters==1.4.2
 parso==0.1.1
 pexpect==4.3.1
 pickleshare==0.7.4
-Pillow==3.1.2
+Pillow==9.3.0
 piston-mini-client==0.7.5
 progressbar2==3.34.3
 prompt-toolkit==1.0.15
